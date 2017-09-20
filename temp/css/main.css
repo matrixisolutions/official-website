@@ -1474,7 +1474,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/hero-bg1.gif);
+  background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1490,7 +1490,7 @@ header .header-logo a {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .2;
+  opacity: 0;
   background-color: #19191b;
 }
 
