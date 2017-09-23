@@ -2826,6 +2826,7 @@ footer h4.h05::after {
   padding: 0;
 }
 .footer-main #mc-form input[type="email"] {
+  color: #FFFFFF;
   height: 6rem;
   padding: 1.5rem 8rem 1.5rem 2rem;
   margin-bottom: 1.5rem;
