@@ -307,7 +307,7 @@
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "inc/sendEmail.php",
+			      url: "https://matrixisolutions.000webhostapp.com/contact.php",
 			      data: $(form).serialize(),
 
 			      beforeSend: function() { 
@@ -330,7 +330,7 @@
 			      },
 			      error: function() {
 			      	sLoader.fadeOut(); 
-			      	$('#message-warning').html("Something went wrong. Please try again.");
+			      	//$('#message-warning').html("Something went wrong. Please try again.");
 			         $('#message-warning').fadeIn();
 			      }
 		      });    		
