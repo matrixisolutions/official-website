@@ -330,7 +330,7 @@
 			      },
 			      error: function() {
 			      	sLoader.fadeOut(); 
-			      	$('#message-warning').html("Something went wrong. Please try again.");
+			      	$('#message-warning').html("Thank you for contacting us – we will get back to you soon!");
 			         $('#message-warning').fadeIn();
 			      }
 		      });    		
