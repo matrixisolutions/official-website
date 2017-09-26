@@ -313,7 +313,7 @@
 			      beforeSend: function() { 
 			      	sLoader.fadeIn(); 
 			      },
-			      success: function(msg) {
+			     success: function(msg) {
 		            // Message was sent
 		            if (msg == 'OK') {
 		            	sLoader.fadeOut(); 
@@ -324,15 +324,23 @@
 		            // There was an error
 		            else {
 		            	sLoader.fadeOut(); 
-		               $('#message-warning').html(msg);
+		               $('#message-warning').html("Something went Wrong Please try again !!!");
 			            $('#message-warning').fadeIn();
 		            }
 			      },
 			      error: function() {
 			      	sLoader.fadeOut(); 
-			      	$('#message-warning').html("Thank you for contacting us – we will get back to you soon!");
+			      	if(navigator.onLine) { // true|false
+			      			 $('#message-warning').hide();
+		               $('#contactForm').fadeOut();
+		               $('#message-success').fadeIn(); 
+			      	}
+			      	else{
+	
+			      	$('#message-warning').html("Something went Wrong Please try again !!!");
 			         $('#message-warning').fadeIn();
-			      }
+			     
+			     } }
 		      });    		
 	  		}
 
