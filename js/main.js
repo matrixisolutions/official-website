@@ -6,7 +6,7 @@
 	var cfg = {		
 		defAnimation   : "fadeInUp",    // default css animation		
 		scrollDuration : 800,           // smoothscroll duration
-		mailChimpURL   : 'http://www.matrixisolutions.us16.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=f25cfdf99e'
+		mailChimpURL   : 'http://www.matrixisolutions.us16.list-manage.com/subscribe/post?u=e2bbab81e6708e87aba63ca1a&amp;id=f25cfdf99e'
 	},	
 
 	$WIN = $(window);
