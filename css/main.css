@@ -1,4 +1,6 @@
 
+
+
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 @import url("fonts.css");
@@ -847,6 +849,17 @@ input::-moz-focus-inner {
   text-indent: 0;
   background: transparent;
   color: #151515;
+}
+.drop-cap1:first-letter {
+  float: left;
+  margin: 0;
+  padding: 1.5rem .6rem 0 0;
+  font-size: 8.4rem;
+  font-family: "montserrat-bold", sans-serif;
+  line-height: 6rem;
+  text-indent: 0;
+  background: transparent;
+  color: white;
 }
 
 /* line definition style 
@@ -1850,6 +1863,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  12. services - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
+
 #services {
   background-color: #19191b;
   background-image: url(../images/services-bg.jpg);
@@ -1963,6 +1978,124 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     padding: 0;
   }
 }
+
+
+
+ 
+#works {
+  background-color: #19191b;
+  background-image: url(../images/services-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+  padding: 15rem 0 15rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+#works .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.7);
+}
+#works .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
+}
+#works .section-intro h3 {
+  color: rgba(242, 242, 242, 0.5);
+}
+#works .section-intro h1 {
+  color: #FFFFFF;
+}
+#works .section-intro .lead {
+  color: rgba(242, 242, 242, 0.4);
+}
+#works .services-content {
+  text-align: center;
+  max-width: 1040px;
+}
+#works .services-list {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+#works .services-list .service-item {
+  margin-bottom: 3rem;
+  padding: 0 50px;
+}
+#works .services-list .service-item p {
+  color: rgba(242, 242, 242, 0.5);
+}
+#works .services-list .icon {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+#works .services-list .icon i {
+  font-size: 5.4rem;
+  color: #f9a828;
+}
+#works .services-list .h05 {
+  font-size: 1.7rem;
+  line-height: 1.765;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #works .services-list .service-item {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #works .services-list .service-item {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #works {
+    padding: 12rem 0 12rem;
+  }
+  #works .services-content {
+    max-width: 550px;
+  }
+  #works .services-list .service-item {
+    padding: 0 15px;
+  }
+  #works .services-list .icon i {
+    font-size: 5.1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #works .services-list .service-item {
+    padding: 0 10px;
+  }
+  #works .services-list .icon i {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #works .services-list .service-item {
+    padding: 0;
+  }
+}
+
 
 
 /* ===================================================================
@@ -2233,6 +2366,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #FFFFFF;
   padding: 12rem 0 7.8rem;
   text-align: center;
+}
+#testimonials1 {
+  background: grey;
+  padding: 12rem 0 7.8rem;
+  text-align: center;
+}
+#testimonials1 h2 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  color: #07617d;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+  margin-bottom: 4.2rem;
 }
 #testimonials h2 {
   font-family: "montserrat-bold", sans-serif;
