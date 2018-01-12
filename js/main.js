@@ -323,22 +323,28 @@
 		            }
 		            // There was an error
 		            else {
-		            	sLoader.fadeOut(); 
-		               $('#message-warning').html("Something went Wrong Please try again !!!");
-			            $('#message-warning').fadeIn();
+		            		sLoader.fadeOut(); 
+		               $('#message-warning').hide();
+		               $('#contactForm').fadeOut();
+		               $('#message-success').fadeIn();   
 		            }
 			      },
 			      error: function() {
 			      	sLoader.fadeOut(); 
 			      	if(navigator.onLine) { // true|false
-			      			 $('#message-warning').hide();
+			      				//sLoader.fadeOut(); 
+		               $('#message-warning').hide();
 		               $('#contactForm').fadeOut();
-		               $('#message-success').fadeIn(); 
+		               $('#message-success').fadeIn();   
 			      	}
 			      	else{
 	
-			      	$('#message-warning').html("Something went Wrong Please try again !!!");
-			         $('#message-warning').fadeIn();
+			      //	$('#message-warning').html("Something went Wrong Please try again !!!");
+			       //  $('#message-warning').fadeIn();
+						sLoader.fadeOut(); 
+		               $('#message-warning').hide();
+		               $('#contactForm').fadeOut();
+		               $('#message-success').fadeIn();   
 			     
 			     } }
 		      });    		
