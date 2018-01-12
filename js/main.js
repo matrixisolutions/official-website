@@ -307,7 +307,7 @@
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "https://matrixisolutions.000webhostapp.com/contact.php",
+			      url: "https://script.google.com/macros/s/AKfycbxd4bYvDU_nZe82bxEMsiuFCgb6olY9TrWwG0DBgewxA8VIb5U/exec",
 			      data: $(form).serialize(),
 
 			      beforeSend: function() { 
