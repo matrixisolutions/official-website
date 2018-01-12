@@ -307,7 +307,7 @@
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "https://script.google.com/macros/s/AKfycbxd4bYvDU_nZe82bxEMsiuFCgb6olY9TrWwG0DBgewxA8VIb5U/exec",
+			      url: "https://script.google.com/macros/s/AKfycbw5kstKW_wF5cgQJTHuKmin7tap4jgZ2787O8Ub0eIvA38xfQ/exec",
 			      data: $(form).serialize(),
 
 			      beforeSend: function() { 
